@@ -11,7 +11,7 @@ const AddProduct = () => {
     const [verify, setVerify] = useState([]);
     const { user } = useContext(AuthContext);
     useEffect(() => {
-        fetch(`http://localhost:5000/users?mail=${user?.email}`)
+        fetch(`https://finnal-project-server.vercel.app/users?mail=${user?.email}`)
             .then((response) => response.json())
             .then((data) => setVerify(data[0]));
     }, [user?.email]);
