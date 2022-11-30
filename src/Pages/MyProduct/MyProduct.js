@@ -7,7 +7,7 @@ const MyProduct = () => {
     const { user } = useContext(AuthContext);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product?mail=${user?.email}`)
+        fetch(`https://finnal-project-server.vercel.app/product?mail=${user?.email}`)
             .then((response) => response.json())
             .then((data) => setProduct(data))
     }, [user?.email]);

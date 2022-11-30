@@ -6,7 +6,7 @@ const MyProductCard = ({ Product }) => {
     const handleAddAdds = (Product) => {
         // console.log("riyadh");
         console.log(Product);
-        fetch('http://localhost:5000/adds', {
+        fetch('https://finnal-project-server.vercel.app/adds', {
             method: 'POST',
             headers: {
                'content-type': 'application/json'

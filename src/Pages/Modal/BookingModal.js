@@ -9,7 +9,7 @@ const BookingModal = ({product}) => {
     const handleBooking = (data) => {
         console.log(data);
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://finnal-project-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                'content-type': 'application/json'
