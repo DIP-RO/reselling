@@ -15,7 +15,7 @@ const AllUser = () => {
 
     const handleMakeAdmin = id => {
 
-        fetch(`http://localhost:5000/users/admin/${id}`, {
+        fetch(`https://finnal-project-server.vercel.app/users/admin/${id}`, {
 
 
             method: 'PUT'
