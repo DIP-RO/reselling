@@ -8,7 +8,7 @@ const Samsung = () => {
     const [product, setProduct] = useState([]);
 //  console.log(product);
     useEffect(() => {
-        fetch('http://localhost:5000/product/oppo')
+        fetch('https://finnal-project-server.vercel.app/product/oppo')
             .then((response) => response.json())
             .then((data) => setSamsung(data));
 
