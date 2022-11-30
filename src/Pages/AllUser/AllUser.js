@@ -29,7 +29,7 @@ const AllUser = () => {
     }
     const handleMakeVerify = id => {
 
-        fetch(`http://localhost:5000/users/verify/${id}`, {
+        fetch(`https://finnal-project-server.vercel.app/users/verify/${id}`, {
 
 
             method: 'PUT'
