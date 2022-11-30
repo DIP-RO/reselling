@@ -41,7 +41,9 @@ const Navbar = () => {
                         {manueaitems}
                     </ul>
                 </div>
+                <img src='https://icon-library.com/images/web-user-icon/web-user-icon-12.jpg' alt='' className='w-12'/>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">Mobile Bd</Link>
+            
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
