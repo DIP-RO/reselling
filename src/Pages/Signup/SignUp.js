@@ -23,7 +23,7 @@ const SignUp = () => {
  const saveUser = (name , mail , role)=>{
      const verified = "none"
     const addUser = {name , mail , role,verified };
-    fetch('http://localhost:5000/users',{
+    fetch('https://finnal-project-server.vercel.app/users',{
         method: 'POST',
         headers:{
             'content-type':'application/json'

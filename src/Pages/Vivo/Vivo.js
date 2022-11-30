@@ -8,7 +8,7 @@ const Samsung = () => {
     const [product, setProduct] = useState([]);
 //  console.log(product);
     useEffect(() => {
-        fetch('http://localhost:5000/product/vivo')
+        fetch('https://finnal-project-server.vercel.app/product/vivo')
             .then((response) => response.json())
             .then((data) => setSamsung(data));
 
