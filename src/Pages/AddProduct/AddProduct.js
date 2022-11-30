@@ -20,7 +20,7 @@ const AddProduct = () => {
     const handleAddProduct = (data) => {
         console.log(data);
 
-        fetch('http://localhost:5000/product', {
+        fetch('https://finnal-project-server.vercel.app/product', {
             method: 'POST',
             headers: {
                'content-type': 'application/json'
