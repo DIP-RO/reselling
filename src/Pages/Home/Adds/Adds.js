@@ -7,7 +7,7 @@ const Adds = () => {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/adds')
+        fetch('https://finnal-project-server.vercel.app/adds')
             .then((response) => response.json())
             .then((data) => setAdds(data))
     }, []);
