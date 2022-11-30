@@ -6,7 +6,7 @@ const AllUser = () => {
     const [allUsers, setAllUsers] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('https://finnal-project-server.vercel.app/users')
             .then((response) => response.json())
             .then((data) => setAllUsers(data));
 
